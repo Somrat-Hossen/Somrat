@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int n,i,j,m=0,arr[505],sum,cnt=0;
+    cin>>n;
+
+    for(i=0;i<=n;i++)
+    {
+        for(j=0,sum=0;j<=i;j++)
+        {
+            sum+=j;
+        }
+        arr[m++]=sum;
+    }
+
+    for(i=0;i<=n;i++)
+    {
+        if(arr[i]==n)cnt++;
+    }
+    if(cnt)
+    cout<<"YES"<<endl;
+    else
+        cout<<"NO"<<endl;
+
+    return 0;
+}
