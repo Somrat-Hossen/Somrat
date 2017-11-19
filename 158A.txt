@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+char str[1000];
+int t,len,i;
+cin>>t;
+while(t--)
+{
+scanf("%s",str);
+len=strlen(str);
+
+if(len<=10)
+{
+    cout<<str<<endl;
+}
+else if(len>10)
+{
+  cout<<str[0]<<len-2<<str[len-1]<<endl;
+}
+}
+    return 0;
+}
