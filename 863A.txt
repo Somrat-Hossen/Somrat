@@ -1,0 +1,46 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+   int num,rem,i,cnt=0,n,temp,m,rev=0;
+   cin>>num;
+   n=num;
+
+    while(num>0)
+             {
+               rem=num%10;
+               num=num/10;
+               if(rem==0)
+               {
+                 cnt++;
+               }
+               else
+                break;
+             }
+
+    while(cnt--)
+    {
+        n/=10;
+    }
+   temp=n;
+     while(n!=0)
+            {
+                m=n%10;
+                rev=rev*10+m;
+                n=n/10;
+            }
+
+
+           if(temp==rev)
+        {
+            printf("YES\n");
+        }
+        else
+        {
+            printf("NO\n");
+        }
+
+    return 0;
+}
