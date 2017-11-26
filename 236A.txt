@@ -1,0 +1,36 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int cnt=0,coun=0;
+    char str[110];
+    gets(str);
+
+    int len=strlen(str);
+    for(int i=0;i<len;i++)
+    {
+    cnt=0;
+    for(int j=0;j<i;j++)
+    {
+      if(str[i]==str[j])
+      {
+      cnt++;
+      break;
+      }
+    }
+    if(cnt==0)
+    {
+      coun++;
+    }
+    }
+
+    if(coun%2==0)
+    {
+    cout<<"CHAT WITH HER!"<<endl;
+    }
+    else
+    cout<<"IGNORE HIM!"<<endl;
+    return 0;
+}
