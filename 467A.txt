@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int cnt=0,coun=0,n,p,q;
+    cin>>n;
+    while(n--)
+    {
+        cin>>p>>q;
+        if(p+2<=q)
+        {
+        cnt++;
+        }
+    }
+
+    cout<<cnt<<endl;
+
+    return 0;
+}
+
