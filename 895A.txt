@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int n,i,j,res=500,t1=0,t2;//Approximately max int assumed that needed
+    cin>>n;
+    int arr[n];
+    for(i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+
+    for(i=0;i<n;i++)
+    {
+        for(j=i;j<n;j++)
+        {
+            t1+=arr[j];
+            t2=360-t1;
+
+            res=min(res,abs(t1-t2));
+        }
+        t1=0;
+    }
+    cout<<res<<endl;
+    return 0;
+}
