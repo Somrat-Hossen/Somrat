@@ -1,0 +1,34 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    char str[1000],str1[1000];
+    gets(str);
+    gets(str1);
+    int len,i,cnt=0;
+    len=strlen(str);
+
+    strrev(str);
+
+
+    for(i=0;str1[i]!='\0';i++)
+    {
+        if(str[i]==str1[i])
+        {
+            cnt++;
+        }
+    }
+    if(cnt==len)
+    {
+        cout<<"YES"<<endl;
+    }
+    else
+        {
+        cout<<"NO"<<endl;
+        }
+
+
+    return 0;
+}
