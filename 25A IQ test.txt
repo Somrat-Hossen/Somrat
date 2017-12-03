@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int cnt=0,coun=0,eind,oind,i,n,num;
+    cin>>n;
+    for(i=1;i<=n;i++)
+    {
+        cin>>num;
+        if(num%2==0)
+        {
+            cnt++;
+            eind=i;
+        }
+
+        else
+        {
+            coun++;
+            oind=i;
+        }
+    }
+    cout << (cnt>coun ? oind : eind)<<endl;
+
+    return 0;
+}
