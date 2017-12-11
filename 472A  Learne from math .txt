@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+int prime(int n);
+
+using namespace std;
+
+int main()
+     {
+         int n;
+       cin>>n;
+
+     (n%2)? printf("%d %d",(n-9),n-(n-9)):printf("%d %d", (n-8),n-(n-8)) ;
+
+
+     }
+
+
+
+
+
