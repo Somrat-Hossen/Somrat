@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+#include<iomanip>
+#define PI acos(-1)
+int arr[1000];
+
+using namespace std;
+
+int main()
+
+{
+    int tc,x;
+    cin>>tc;
+
+    while(tc--)
+    {
+    cin>>x;
+    if(x%3==0 || x%7==0 || x%(7+3)==0  || x>=12)
+     cout<<"YES"<<endl;
+    else
+      cout<<"NO"<<endl;
+    }
+    return 0;
+}
+
+
