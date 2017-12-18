@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+#include<iomanip>
+#define PI acos(-1)
+int arr[100000];
+
+int check(int n)
+{
+
+}
+
+using namespace std;
+int main()
+{
+    int n,m,res=1;
+    cin>>n>>m;
+
+    while(n)
+    {
+        if(res%m)
+        {
+            n--;
+        }
+        res++;
+    }
+
+    cout<<res-1<<endl;
+
+    return 0;
+}
+
+
