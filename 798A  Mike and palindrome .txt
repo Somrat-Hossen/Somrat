@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+#include<string.h>
+
+using namespace std;
+
+  int main()
+    {
+     string str,ss;
+     int len,j=0,i,cnt=0;
+     cin>>str;
+     len=str.size();
+     ss=str;
+     reverse(str.begin(),str.end());
+
+     for(i=0;i<len;i++)
+     {
+        if( str[i]!=ss[i])
+         cnt++;
+     }
+
+   if(cnt==2 ||(cnt==0 and len%2))//When cnt =0 then length must be odd,normally len=2 then op yes
+   {
+     cout<<"YES"<<endl;
+   }
+   else
+   {
+     cout<<"NO"<<endl;
+   }
+    return 0;
+    }
+
