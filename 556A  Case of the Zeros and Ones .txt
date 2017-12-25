@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    string str;
+    int len,cnt=0,coun=0,temp;
+    cin>>len;
+    cin>>str;
+
+    for(int i=0;i<str.size();i++)
+    {
+     if(str[i]=='0')
+        cnt++;
+     else
+         coun++;
+    }
+    temp=min(cnt,coun);
+
+    cout<<len-(temp*2)<<endl;
+
+    return 0;
+
+}
