@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int num,i,sum=0;
+    scanf("%d",&num);
+    int arr[num];
+
+    for(i=0;i<num;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    sort(arr,arr+num,greater<int>());
+
+    for(i=0;i<num;i++)
+    {
+        sum+=arr[i];
+    }
+    printf("%d\n",arr[0]*num-sum);
+    
+    return 0;
+}
