@@ -1,0 +1,62 @@
+#include <bits/stdc++.h>
+#include<iomanip>
+#define PI acos(-1)
+int arr[5005],ar[5005],a[5005],x[5005];
+
+using namespace std;
+
+int check(int n)
+{
+
+}
+
+int main()
+{
+    int n,p=0,m=0,ps=0,temp,j=1,k=1,l=1;
+    scanf("%d",&n);
+
+   for(int i=1;i<=n;i++)
+    {
+      scanf("%d",&x[i]);
+    }
+    for(int i=1;i<=n;i++)
+    {
+     if(x[i]==1)
+     {
+       p++;
+       arr[j++]=i;
+    }
+     else if(x[i]==2)
+     {
+       m++;
+       ar[k++]=i;
+     }
+
+     else if(x[i]==3)
+
+     {
+         ps++;
+         a[l++]=i;
+     }
+    }
+
+    temp=min(p,m);
+    temp=min(temp,ps);
+
+    if(p==0 or m==0 or ps==0)
+    {
+        printf("0\n");
+        return 0;
+    }
+    else if(p and m and ps)
+    {
+    printf("%d\n",temp);
+    }
+    for(int i=1;i<=temp;i++)
+    {
+        printf("%d %d %d\n",arr[i],ar[i],a[i]);
+    }
+
+    return 0;
+}
+
