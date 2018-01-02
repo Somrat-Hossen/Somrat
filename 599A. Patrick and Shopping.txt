@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+#include<iomanip>
+#define PI acos(-1)
+//int arr[10000];
+
+using namespace std;
+
+int check(int n)
+{
+
+}
+
+int main()
+{
+    int y,x,d1,d2,d3,a,b,temp;
+    cin>>d1>>d2>>d3;
+
+    x=d1*2+d2*2;
+    y=d1+d2+d3;
+    a=d1*2+d3*2;
+    b=d2*2+d3*2;
+
+    temp=min(x,y);
+    temp=min(a,temp);
+    temp=min(b,temp);
+
+    cout<<temp<<endl;
+
+    return 0;
+}
+
+
